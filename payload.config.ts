@@ -58,6 +58,22 @@ export default buildConfig({
       ],
     },
     {
+      slug: 'docs',
+      admin: {
+        useAsTitle: 'title',
+      },
+      fields: [
+        {
+          name: 'title',
+          type: 'text',
+        },
+        {
+          name: 'content',
+          type: 'richText',
+        },
+      ],
+    },
+    {
       slug: 'media',
       upload: true,
       fields: [
